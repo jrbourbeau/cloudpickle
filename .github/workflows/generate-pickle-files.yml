@@ -45,9 +45,9 @@ jobs:
         name: old_pickles
         path: tests/old_pickles
 
-    - name: Commit pickle files
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-        git commit -a -m "Update Python ${{ matrix.python_version }} pickle files"
-        git push
+    # - name: Commit pickle files
+    #   run: |
+    #     git config --global user.name 'github-actions[bot]'
+    #     git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+    #     git commit -a -m "Update Python ${{ matrix.python_version }} pickle files"
+    #     git push
