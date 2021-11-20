@@ -1,5 +1,7 @@
+import platform
 import sys
 
+PYPY = platform.python_implementation() == "PyPy"
 
 if sys.version_info < (3, 8):
     try:
